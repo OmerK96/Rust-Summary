@@ -66,10 +66,14 @@ use std::io::{self, Write};
 The glob operator is also supported, for example: `use std::collections::*;`
 
 ## Separating Modules into Different Files
-When used with a semicolon, `mod` loads the contents of the module from another file with the same name as the module. For example:
-![](./images/7_lib_rs.png)
+When used with a semicolon, `mod` loads the contents of the module from another file with the same name as the module. For example: 
+
+![](./images/7_lib_rs.png) 
+
 ![](./images/7_front_simple.png)
 
-We can continue even further with directories:
-![](./images/7_front_complex.png)
+We can continue even further with directories: 
+
+![](./images/7_front_complex.png) 
+
 ![](./images/7_hosting.png)

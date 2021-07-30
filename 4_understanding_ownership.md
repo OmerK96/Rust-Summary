@@ -20,8 +20,10 @@ let s1 = String::from("hello");
 let s2 = s1;
 ```
 
-Memory overlay:
-![](./images/4_ownership_move.png)
+Memory overlay: 
+
+![](./images/4_ownership_move.png) 
+
 `s1` is no longer valid.
 
 ### Clone
@@ -31,8 +33,9 @@ let s1 = String::from("hello");
 let s2 = s1.clone();
 ```
 
-Memory overlay:
-![](./images/4_ownership_clone.png)
+Memory overlay: 
+
+![](./images/4_ownership_clone.png) 
 
 ### Copy
 Types of data that are entirely on the stack (e.g.: integers), are easy to make, and therefore are just copied when creating a variable with the value of another variable. The types that allow copying all implement the `Copy` trait. Examples are:
@@ -93,7 +96,8 @@ let hello = &s[0..5];
 let world = &s[6..11];
 ```
 
-Indices using a range are inclusive at the start, and exclusive at the end. Looks like this in the memory:
+Indices using a range are inclusive at the start, and exclusive at the end. Looks like this in the memory: 
+
 ![](./images/4_slice.png)
 
 You can drop the value before the two periods if you want to start at index zero:
